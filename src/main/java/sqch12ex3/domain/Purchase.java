@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 public class Purchase {
 	private int id;
-	private String name;
+	private String product;
 	private BigDecimal price;
 }
