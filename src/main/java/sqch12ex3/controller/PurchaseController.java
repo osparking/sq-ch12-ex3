@@ -1,4 +1,4 @@
-package controller;
+package sqch12ex3.controller;
 
 import java.util.List;
 
