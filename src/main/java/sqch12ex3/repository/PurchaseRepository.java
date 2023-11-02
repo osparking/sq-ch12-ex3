@@ -13,6 +13,11 @@ import sqch12ex3.domain.Purchase;
 @AllArgsConstructor
 public class PurchaseRepository {
 	private final JdbcTemplate jdbcTemplate;
+	
+	public void deletePurchase(int id) {
+		String sql = "delete from purchase where id=?";
+		jdbcTemplate.update(sql, id);
+	}
 
 	public void createPurchase(Purchase purchase) {
 		String sql = "insert into purchase values (null, ?, ?)";
